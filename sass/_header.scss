@@ -77,7 +77,6 @@ header.shadow {
 	position: fixed;
 	top: 0;
 	transition: top 0.3s;
-	scroll-behavior: smooth;
 }
 
 .navbar {
@@ -109,7 +108,7 @@ header.shadow {
 	z-index: 10001;
 	display: none;
 	margin-right: 4%;
-	display: none;
+
 	@media (max-width: 768px) {
 		display: initial;
 		color: black;
