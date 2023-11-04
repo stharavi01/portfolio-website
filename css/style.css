@@ -239,7 +239,7 @@ header.shadow {
 }
 @media (max-width: 768px) {
   #menu-icon {
-    display: initial;
+    display: none;
     color: black;
   }
 }

@@ -111,7 +111,7 @@ header.shadow {
 	right: 3rem;
 
 	@media (max-width: 768px) {
-		display: initial;
+		display: none;
 		color: black;
 	}
 }
