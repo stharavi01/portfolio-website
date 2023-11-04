@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Nunito+Sans:wght@300;400;600&display=swap");
+
+// COLOR VARIABLES
+$main-color: #f3eeea;
+$bg-color: #fff;
+$text-color: #1a1818;
+$hover: #cbced8;
+$nav-hover: rgb(50, 50, 158);
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+$big-font: 3.8rem;
+$medium-font: 2.4rem;
+$p-font: 0.98rem;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+html,
+body {
+	width: 100%;
+	overflow-x: none;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-size: $p-font;
+}
+
+body {
+	background: $main-color;
+	color: $text-color;
+	font-family: $font-primary;
+	font-weight: 400;
+	line-height: 1.7;
+	width: 100%;
+	overflow: none;
+}
+
+.container {
+	display: grid;
+
+	grid-template-rows: min-content 100vh repeat(4, min-content);
+	grid-template-columns:
+		[left-sidebar-start] 10rem [left-sidebar-end full-start] 1fr [center-start]repeat(
+			11,
+			[col-start] minmax(min-content, 12rem) [col-end]
+		)
+		[center-end] 1fr [full-end right-sidebar-start] 8rem [right-sidebar-end];
+
+	@media (max-width: 1100px) {
+		grid-template-columns:
+			[left-sidebar-start] 7rem [left-sidebar-end full-start] 1fr [center-start]repeat(
+				11,
+				[col-start] minmax(min-content, 12rem) [col-end]
+			)
+			[center-end] 1fr [full-end right-sidebar-start] 6rem [right-sidebar-end];
+	}
+
+	@media (max-width: 761px) {
+		grid-template-columns:
+			[full-start] 1fr [center-start]repeat(
+				11,
+				[col-start] minmax(min-content, 12rem) [col-end]
+			)
+			[center-end] 1fr [full-end];
+	}
+}

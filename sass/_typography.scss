@@ -1,0 +1,64 @@
+%heading {
+  font-size: &font-display;
+  font-weight: 500;
+  color: $text-color;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 0.972rem;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2.4rem;
+  @media (max-width: 881px) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 461px) {
+    font-size: 1.4rem;
+  }
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 3.8rem;
+  color: #68696e;
+  font-weight: 700;
+
+  @media (max-width: 928px) {
+    font-size: 3.2rem;
+  }
+
+  @media (max-width: 881px) {
+    font-size: 2.7rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+  }
+  @media (max-width: 544px) {
+    font-size: 2rem;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-medium {
+  margin-bottom: 2rem;
+}
+
+.mb-large {
+  margin-bottom: 3rem;
+}

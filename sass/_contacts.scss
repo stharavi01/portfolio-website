@@ -1,0 +1,89 @@
+.contacts {
+  grid-column: col-start 4 / col-start 8;
+  grid-row: 6 / 7;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 461px) {
+    margin-top: 1.5rem;
+  }
+}
+
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+
+  @media (max-width: 461px) {
+    margin-top: 1rem;
+  }
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+
+  @media (max-width: 461px) {
+    width: 160%;
+  }
+}
+
+form input,
+textarea {
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: hsla(260, 100%, 44%, 0.1);
+  margin-bottom: 1rem;
+  color: &text-color;
+
+  @media (max-width: 761px) {
+    padding: 20px 10px;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 661px) {
+    padding: 15px 10px;
+    margin-bottom: 1rem;
+  }
+}
+form input::placeholder,
+textarea::placeholder {
+  color: &text-color;
+}
+form textarea {
+  resize: none;
+  height: 200px;
+
+  @media (max-width: 661px) {
+    height: 100px;
+  }
+}
+.contact-button {
+  width: 50%;
+  cursor: pointer;
+  background: #2768d9;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+
+  @media (max-width: 761px) {
+    width: 45%;
+  }
+}
+.contact-button:hover {
+  background: &hover;
+  transform: scale(1.04);
+}
