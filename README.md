@@ -14,8 +14,9 @@ experience.
 <br />
 
 ### Run the project in 2 steps
-1. Install Dependencies
-   <a>npm install<a/>
-2. Compile Sass
-   <a>npm run compile </a>
+1. Clone the repo:
+2. Install Dependencies
+   ( npm install )
+3. Compile Sass
+   ( npm run compile )
 
