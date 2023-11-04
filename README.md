@@ -1,4 +1,4 @@
-<div align="center">
+<div>
 
   <h2 align="center">Portfolio Website</h2>
 
@@ -13,7 +13,7 @@ experience.
 
 <br />
 
-### Run the project in 2 steps
+### Run the project in 3 steps
 1. Clone the repo:
 2. Install Dependencies
    ( npm install )
