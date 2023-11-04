@@ -20,25 +20,28 @@
 	<body class="container">
 		<header id="navbar">
 			<div class="logo" id="home">Rabin</div>
+
 			<div class="bx bx-menu" id="menu-icon"></div>
-			<ul class="navbar">
-				<li>
-					<a href="#home">Home</a>
-				</li>
-				<li>
-					<a href="#about"> About</a>
-				</li>
-				<!-- <li>
+			<div class="small-screen">
+				<ul class="navbar">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about"> About</a>
+					</li>
+					<!-- <li>
 					<a href="#skills"> Skills </a>
 				</li> -->
-				<li>
-					<a href="#work"> Work</a>
-				</li>
+					<li>
+						<a href="#work"> Work</a>
+					</li>
 
-				<li>
-					<a href="#contact"> Contact</a>
-				</li>
-			</ul>
+					<li>
+						<a href="#contact"> Contact</a>
+					</li>
+				</ul>
+			</div>
 		</header>
 
 		<!-- Main page start -->
@@ -178,7 +181,11 @@
 				</div>
 				<div class="features__image">
 					<a href="https://react-unsplash-project.netlify.app/">
-						<img class="works__image1" src="./images/unsplash.png" alt="image"
+						<img
+							class="works__image1"
+							src="./images/unsplash.png"
+							alt="image"
+							style="opacity: 0.8; height: 90%"
 					/></a>
 				</div>
 			</div>
@@ -240,7 +247,7 @@
 					</a>
 				</div>
 
-				<div class="features__image">
+				<div class="features__image" style="height: 85%" ;>
 					<a href="https://my-react-cocktails-project.netlify.app//"
 						><img class="works__image1" src="./images/cocktail.png" alt="image"
 					/></a>
@@ -355,21 +362,10 @@
 				origin: "right",
 			});
 
-			ScrollReveal().reveal(".about__list", {
-				delay: 600,
-				origin: "left",
-			});
-			ScrollReveal().reveal(".grid-wrapper-main", {
-				delay: 650,
-				origin: "left",
-			});
-			ScrollReveal().reveal(".grid-wrapper-secondary", {
-				delay: 650,
-				origin: "right",
-			});
-			ScrollReveal().reveal(".skill-gallery", {
-				delay: 400,
-				origin: "bottom",
+			ScrollReveal().reveal(".skill-gallery>div", {
+				delay: 350,
+				origin: "top",
+				interval: 100,
 			});
 
 			ScrollReveal().reveal(".work-heading", {

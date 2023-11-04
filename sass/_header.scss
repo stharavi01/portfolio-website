@@ -51,7 +51,6 @@ header.shadow {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		font-weight: 500;
@@ -78,6 +77,7 @@ header.shadow {
 	position: fixed;
 	top: 0;
 	transition: top 0.3s;
+	scroll-behavior: smooth;
 }
 
 .navbar {

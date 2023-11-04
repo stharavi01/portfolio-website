@@ -74,10 +74,10 @@
 }
 
 .skill-gallery {
-	margin-left: -1rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 0.8rem;
 
 	@media (max-width: 500px) {
 		margin: 4rem 6% 0 6%;
