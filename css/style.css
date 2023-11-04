@@ -234,7 +234,8 @@ header.shadow {
   cursor: pointer;
   z-index: 10001;
   display: none;
-  margin-right: 4%;
+  position: absolute;
+  right: 3rem;
 }
 @media (max-width: 768px) {
   #menu-icon {
