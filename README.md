@@ -15,7 +15,7 @@ experience.
 
 ### Run the project in 2 steps
 1. Install Dependencies
-   npm install
+   <a>npm install<a/>
 2. Compile Sass
-   npm run compile
+   <a>npm run compile </a>
 
