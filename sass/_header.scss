@@ -45,12 +45,10 @@ header.shadow {
 	box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
 .logo {
-	font-size: 1.61rem;
-	font-weight: 600;
-	color: $text-color;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
+	margin-left: 1%;
 
 	@media (max-width: 768px) {
 		font-weight: 500;
@@ -64,8 +62,7 @@ header.shadow {
 
 	& img {
 		border-radius: 50%;
-		width: 2.5rem;
-		margin-right: 1rem;
+		width: 2.6rem;
 
 		@media (max-width: 506px) {
 			width: 2rem;

@@ -166,12 +166,10 @@ header.shadow {
 }
 
 .logo {
-  font-size: 1.61rem;
-  font-weight: 600;
-  color: #1a1818;
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-left: 1%;
 }
 @media (max-width: 768px) {
   .logo {
@@ -187,8 +185,7 @@ header.shadow {
 }
 .logo img {
   border-radius: 50%;
-  width: 2.5rem;
-  margin-right: 1rem;
+  width: 2.6rem;
 }
 @media (max-width: 506px) {
   .logo img {
