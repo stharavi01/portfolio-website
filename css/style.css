@@ -396,6 +396,7 @@ header.shadow {
   background-color: rgb(214, 213, 199);
   padding: 1.2rem 2.6rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 @media (max-width: 406px) {
   .home-btn {
@@ -407,7 +408,7 @@ header.shadow {
   font-size: 1rem;
 }
 .home-btn:hover {
-  background: #cbced8;
+  background: #acb1d6;
 }
 
 .main-paragraph {
@@ -560,6 +561,7 @@ header.shadow {
   margin-bottom: 6rem;
   column-gap: 1.2rem;
   margin-right: 3rem;
+  border-radius: 2rem;
 }
 @media (max-width: 1180px) {
   .features {
@@ -602,6 +604,8 @@ header.shadow {
   height: 100%;
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
+  border-radius: 1rem;
+  height: 94%;
 }
 .features__image img:hover {
   opacity: 1;
