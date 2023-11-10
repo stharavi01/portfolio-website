@@ -32,8 +32,6 @@ body {
 
 .container {
   display: grid;
-  position: relative;
-  z-index: 2;
   grid-template-rows: min-content 100vh repeat(4, min-content);
   grid-template-columns: [left-sidebar-start] 10rem [left-sidebar-end full-start] 1fr [center-start] repeat(11, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1fr [full-end right-sidebar-start] 8rem [right-sidebar-end];
 }
@@ -158,10 +156,9 @@ header {
 }
 @media (max-width: 506px) {
   header {
-    z-index: 1000;
+    z-index: 10;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     box-shadow: 0 0 0 rgba(60, 209, 174, 0.6);
   }
 }
@@ -182,19 +179,18 @@ header {
   .navbar.active {
     position: absolute;
     right: 0;
-    background-color: #bcf5e1;
     height: 120vh;
-    width: 60%;
+    width: 60vw;
+    background-color: #1ad1a5;
     padding: 5rem 0;
   }
 }
 @media (max-width: 506px) {
   .navbar li {
     margin: 2rem 0;
-    text-decoration: underline;
+    border-bottom: 1px solid #fff;
   }
 }
-
 .navbar a {
   font-size: 1rem;
   padding: 10px 20px;
