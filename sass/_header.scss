@@ -5,7 +5,6 @@
 
 header {
 	position: fixed;
-
 	width: 100%;
 	top: 0;
 	right: 0;
@@ -30,13 +29,12 @@ header {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
+		z-index: 100;
 		justify-content: flex-start;
 		right: -500px;
 		top: 0;
 		transition: right 0.4s ease;
 		&.active {
-			position: absolute;
-			z-index: 100;
 			right: 0;
 			height: 120vh;
 			width: 60vw;
