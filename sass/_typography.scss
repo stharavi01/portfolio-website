@@ -11,7 +11,8 @@
 
 .heading-2 {
 	@extend %heading;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
 	color: #1ad1a5;
 
 	@media (max-width: 768px) {
@@ -56,7 +57,7 @@
 
 .heading-5 {
 	@extend %heading;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	@media (max-width: 881px) {
 		font-size: 1.6rem;
 	}
@@ -64,6 +65,10 @@
 	@media (max-width: 461px) {
 		font-size: 1.4rem;
 	}
+}
+
+.blue-text {
+	color: #1ad1a5;
 }
 
 .mb-sm {
