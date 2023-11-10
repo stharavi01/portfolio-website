@@ -12,7 +12,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: rgba(252, 247, 247, 0.6);
+	box-shadow: 0 0 4px rgba(60, 209, 174, 0.6);
 	padding: 10px 10%;
 	transition: 0.4s;
 
@@ -83,6 +83,11 @@ header.shadow {
 	position: fixed;
 	top: 0;
 	transition: top 0.3s;
+
+	@media (max-width: 506px) {
+		position: fixed;
+		top: 0;
+	}
 }
 
 .navbar {
@@ -110,6 +115,7 @@ header.shadow {
 	background-color: #dbdee6;
 	border-radius: 0.4rem;
 }
+
 #menu-icon {
 	font-size: 2.4rem;
 	cursor: pointer;
@@ -119,7 +125,6 @@ header.shadow {
 	right: 3rem;
 
 	@media (max-width: 768px) {
-		display: none;
-		color: black;
+		display: block;
 	}
 }

@@ -73,6 +73,7 @@
 			margin-right: 2rem;
 			margin-bottom: 0.6rem;
 			border-radius: 6px;
+			box-shadow: 0 0 3px rgba(97, 228, 197, 0.5);
 
 			@media (max-width: 761px) {
 				width: 96%;
@@ -90,15 +91,16 @@
 		img {
 			width: 100%;
 			height: 100%;
-			opacity: 1;
+			opacity: 0.9;
 			transition: all 0.2s ease-in-out;
 			border-radius: 1rem;
 			height: 94%;
-			z-index: 1;
 
 			&:hover {
 				opacity: 1;
 				transform: scale(1.03);
+
+				box-shadow: 0 0 10px rgba(38, 201, 163, 0.5);
 			}
 
 			@media (max-width: 1080px) {
