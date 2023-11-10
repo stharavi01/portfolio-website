@@ -8,7 +8,6 @@ header {
 	width: 100%;
 	top: 0;
 	right: 0;
-	z-index: 1000;
 	display: flex;
 	align-items: center;
 	justify-content: right;
@@ -17,48 +16,48 @@ header {
 	transition: 0.4s;
 
 	@media (max-width: 506px) {
-		width: 100%;
+		z-index: 10;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
 		box-shadow: 0 0 0 rgba(60, 209, 174, 0.6);
 	}
 }
 
 .navbar {
 	display: flex;
+
+	& li,
+	a {
+		font-size: 1rem;
+		padding: 10px 20px;
+		color: #0f0f0f;
+		font-weight: 500;
+		margin: 0 4px;
+		text-decoration: none;
+		position: relative;
+		& {
+			@media (max-width: 506px) {
+				padding: 1rem 0;
+				margin: 0.6rem 1.5rem;
+			}
+		}
+	}
 	@media (max-width: 506px) {
-		display: flex;
 		flex-direction: column;
 		position: absolute;
+		padding: 8rem 0;
 		justify-content: flex-start;
 		right: -500px;
 		top: 0;
 		transition: right 0.4s ease;
+
 		&.active {
-			position: absolute;
 			right: 0;
-			background-color: #bcf5e1;
 			height: 120vh;
-			width: 60%;
-			padding: 5rem 0;
+			width: 60vw;
+			background-color: #1ad1a5;
 		}
 	}
-
-	& li {
-		@media (max-width: 506px) {
-			margin: 2rem 0;
-			border-bottom: 1px solid #ccc;
-		}
-	}
-}
-
-.navbar a {
-	font-size: 1rem;
-	padding: 10px 20px;
-	color: #0f0f0f;
-	font-weight: 500;
-	margin: 0 4px;
 }
 
 #menu-icon {
