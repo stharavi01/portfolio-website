@@ -2,6 +2,7 @@
 let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
+let navLinks = document.querySelectorAll(".navbar a");
 
 window.addEventListener("scroll", () => {
 	header.classList.toggle("shadow", window.scrollY > 0);
@@ -25,3 +26,9 @@ window.onscroll = function () {
 	}
 	prevScrollpos = currentScrollPos;
 };
+// Nav links auto hide on click
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		navbar.classList.remove("active");
+	});
+});

@@ -26,12 +26,22 @@ header {
 
 .navbar {
 	@media (max-width: 506px) {
-		padding: 6rem 1rem;
+		padding: 5rem 1rem;
 		flex-direction: column;
 		position: absolute;
 		right: -500px;
 		top: 0;
 		transition: right 0.4s ease;
+	}
+}
+
+.nav-header {
+	display: none;
+
+	@media (max-width: 506px) {
+		display: block;
+		margin-left: 0.7rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -53,7 +63,7 @@ header {
 	& {
 		@media (max-width: 506px) {
 			border-bottom: 1px solid #ccc;
-			margin: 1rem 2rem 0 0.2rem;
+			margin: 0 2rem 0 0.2rem;
 		}
 	}
 }
