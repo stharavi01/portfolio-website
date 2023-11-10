@@ -75,14 +75,9 @@
 
 .skill-gallery {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 0.8rem;
 	cursor: pointer;
-
-	@media (max-width: 500px) {
-		margin: 4rem 6% 0 6%;
-	}
 
 	& > div {
 		border: 1px solid #1ad1a5;
@@ -93,9 +88,7 @@
 		i {
 			font-size: 2rem;
 			display: flex;
-			justify-content: center;
 			color: #29af90;
-
 			@media (max-width: 500px) {
 				font-size: 1.5rem;
 			}
