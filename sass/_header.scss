@@ -36,6 +36,7 @@ header {
 		transition: right 0.4s ease;
 		&.active {
 			position: absolute;
+			z-index: 100;
 			right: 0;
 			height: 120vh;
 			width: 60vw;

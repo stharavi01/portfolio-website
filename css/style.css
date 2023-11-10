@@ -178,6 +178,7 @@ header {
   }
   .navbar.active {
     position: absolute;
+    z-index: 100;
     right: 0;
     height: 120vh;
     width: 60vw;
