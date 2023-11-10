@@ -20,10 +20,14 @@
 	}
 }
 
-.work-tools a {
+.work-tools {
 	font-family: $font-display;
 	font-size: 0.9rem;
 	color: #03001c;
+}
+
+.work-tools p {
+	margin: 1rem 0 0.6rem 0;
 }
 
 .features {
@@ -54,9 +58,11 @@
 
 	&__content {
 		.description {
-			padding: 1.2rem;
-			background-color: rgb(227, 228, 208);
+			padding: 1rem 1.6rem;
+			background-color: #f3eeea;
+			margin-right: 2rem;
 			margin-bottom: 0.6rem;
+			border-radius: 6px;
 
 			@media (max-width: 761px) {
 				width: 96%;
