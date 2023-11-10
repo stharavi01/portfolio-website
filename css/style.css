@@ -151,7 +151,7 @@ header {
   align-items: center;
   justify-content: right;
   box-shadow: 0 0 4px rgba(60, 209, 174, 0.6);
-  padding: 16px 10%;
+  padding: 8px 10%;
   transition: 0.4s;
 }
 @media (max-width: 506px) {
