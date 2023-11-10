@@ -155,33 +155,58 @@ header {
   padding: 10px 10%;
   transition: 0.4s;
 }
-@media (max-width: 768px) {
-  header .navbar {
-    position: absolute;
-    top: -500px;
-    left: 0;
-    right: 0;
+
+.navbar {
+  display: flex;
+}
+@media (max-width: 506px) {
+  .navbar {
     display: flex;
     flex-direction: column;
-    background: rgb(228, 225, 225);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.2s ease;
-    text-align: center;
+    position: absolute;
+    right: -500px;
+    top: 0;
+    transition: right 0.4s ease;
   }
-}
-@media (max-width: 991px) {
-  header {
-    padding: 18px 4%;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    padding: 11px 4%;
+  .navbar.active {
+    position: absolute;
+    right: 0;
   }
 }
 
-header.shadow {
-  box-shadow: 0 0 4px rgba(14, 55, 54, 0.15);
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #0f0f0f;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.smaller-navbar {
+  display: none;
+}
+@media (max-width: 506px) {
+  .smaller-navbar {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+  }
+}
+
+#menu-icon {
+  font-size: 2.4rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+  position: absolute;
+  right: 3rem;
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
 }
 
 .logo {
@@ -194,7 +219,7 @@ header.shadow {
   transition: all 0.2s ease-in-out;
   opacity: 0.8;
 }
-.logo :hover {
+.logo:hover {
   transform: scale(1.05);
   opacity: 1;
 }
@@ -221,61 +246,6 @@ header.shadow {
   }
 }
 
-#navbar {
-  position: fixed;
-  top: 0;
-  transition: top 0.3s;
-}
-@media (max-width: 506px) {
-  #navbar {
-    position: fixed;
-    top: 0;
-  }
-}
-
-.navbar {
-  display: flex;
-}
-@media (max-width: 768px) {
-  .navbar.active {
-    top: 100%;
-  }
-}
-
-.navbar a {
-  font-size: 1rem;
-  padding: 10px 20px;
-  color: #0f0f0f;
-  font-weight: 500;
-  margin: 0 4px;
-}
-@media (max-width: 768px) {
-  .navbar a {
-    padding: 1.5rem;
-    display: block;
-    background: rgb(228, 225, 225);
-  }
-}
-
-.navbar a:hover {
-  background-color: #dbdee6;
-  border-radius: 0.4rem;
-}
-
-#menu-icon {
-  font-size: 2.4rem;
-  cursor: pointer;
-  z-index: 10001;
-  display: none;
-  position: absolute;
-  right: 3rem;
-}
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block;
-  }
-}
-
 .footer {
   grid-column: col-start 4/col-start 8;
   grid-row: 7/8;
@@ -297,7 +267,7 @@ header.shadow {
 @media (max-width: 506px) {
   .about_us {
     width: 100vw;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -334,9 +304,11 @@ header.shadow {
   top: 0;
   left: 20%;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .about__picture img:hover {
   transform: scale(1.03);
+  box-shadow: 0 0 8px rgba(38, 201, 163, 0.6);
 }
 @media (max-width: 1080px) {
   .about__picture img {
@@ -438,6 +410,10 @@ header.shadow {
 .home-btn:hover {
   background-color: #e6e8ee;
   color: #000;
+}
+
+.home__text {
+  margin-top: 1rem;
 }
 
 .main-paragraph {
@@ -638,7 +614,6 @@ header.shadow {
   margin-right: 2rem;
   margin-bottom: 0.6rem;
   border-radius: 6px;
-  box-shadow: 0 0 3px rgba(97, 228, 197, 0.5);
 }
 @media (max-width: 761px) {
   .features__content .description {
@@ -652,6 +627,11 @@ header.shadow {
     padding: 0.3rem;
   }
 }
+@media (max-width: 461px) {
+  .features__image {
+    margin-bottom: 2rem;
+  }
+}
 .features__image img {
   width: 100%;
   height: 100%;
@@ -659,11 +639,12 @@ header.shadow {
   transition: all 0.2s ease-in-out;
   border-radius: 1rem;
   height: 94%;
+  box-shadow: 0 0 4px rgba(38, 201, 163, 0.4);
 }
 .features__image img:hover {
   opacity: 1;
   transform: scale(1.03);
-  box-shadow: 0 0 10px rgba(38, 201, 163, 0.5);
+  box-shadow: 0 0 8px rgba(38, 201, 163, 0.8);
 }
 @media (max-width: 1080px) {
   .features__image img {
@@ -685,21 +666,6 @@ header.shadow {
   .features__image img {
     width: 98%;
   }
-}
-
-.projects-btn {
-  display: inline-block;
-  background-color: rgb(214, 213, 199);
-  font-size: 0.9rem;
-  padding: 0.8rem 2.6rem;
-  border-radius: 0.3rem;
-  margin: 1rem auto;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.projects-btn:hover {
-  background-color: #cbced8;
-  transform: scale(1.04);
 }
 
 .contacts {

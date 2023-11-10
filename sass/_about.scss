@@ -10,7 +10,7 @@
 
 	@media (max-width: 506px) {
 		width: 100vw;
-		margin: 3rem 0;
+		margin-bottom: 3rem;
 	}
 }
 
@@ -47,9 +47,11 @@
 			top: 0;
 			left: 20%;
 			transition: all 0.2s ease-in-out;
+			cursor: pointer;
 
 			&:hover {
 				transform: scale(1.03);
+				box-shadow: 0 0 8px rgba(38, 201, 163, 0.6);
 			}
 
 			@media (max-width: 1080px) {

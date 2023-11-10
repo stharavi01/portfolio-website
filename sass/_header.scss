@@ -15,34 +15,57 @@ header {
 	box-shadow: 0 0 4px rgba(60, 209, 174, 0.6);
 	padding: 10px 10%;
 	transition: 0.4s;
+}
 
-	& .navbar {
-		@media (max-width: 768px) {
+.navbar {
+	display: flex;
+	@media (max-width: 506px) {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		right: -500px;
+		top: 0;
+		transition: right 0.4s ease;
+		&.active {
 			position: absolute;
-			top: -500px;
-			left: 0;
 			right: 0;
-			display: flex;
-			flex-direction: column;
-			background: rgb(228, 225, 225);
-			box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-			transition: 0.2s ease;
-			text-align: center;
 		}
 	}
+}
 
-	@media (max-width: 991px) {
-		padding: 18px 4%;
+.navbar a {
+	font-size: 1rem;
+	padding: 10px 20px;
+	color: #0f0f0f;
+	font-weight: 500;
+	margin: 0 4px;
+}
+
+.smaller-navbar {
+	display: none;
+	@media (max-width: 506px) {
+		display: block;
+
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 10px;
 	}
+}
+
+#menu-icon {
+	font-size: 2.4rem;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+	position: absolute;
+	right: 3rem;
 
 	@media (max-width: 768px) {
-		padding: 11px 4%;
+		display: block;
 	}
 }
 
-header.shadow {
-	box-shadow: 0 0 4px rgb(14 55 54 / 15%);
-}
 .logo {
 	padding: 4px 0;
 	display: flex;
@@ -53,7 +76,7 @@ header.shadow {
 	transition: all 0.2s ease-in-out;
 	opacity: 0.8;
 
-	& :hover {
+	&:hover {
 		transform: scale(1.05);
 		opacity: 1;
 	}
@@ -76,55 +99,5 @@ header.shadow {
 		@media (max-width: 506px) {
 			width: 2rem;
 		}
-	}
-}
-
-#navbar {
-	position: fixed;
-	top: 0;
-	transition: top 0.3s;
-
-	@media (max-width: 506px) {
-		position: fixed;
-		top: 0;
-	}
-}
-
-.navbar {
-	display: flex;
-	@media (max-width: 768px) {
-		&.active {
-			top: 100%;
-		}
-	}
-}
-.navbar a {
-	font-size: 1rem;
-	padding: 10px 20px;
-	color: #0f0f0f;
-	font-weight: 500;
-	margin: 0 4px;
-
-	@media (max-width: 768px) {
-		padding: 1.5rem;
-		display: block;
-		background: rgb(228, 225, 225);
-	}
-}
-.navbar a:hover {
-	background-color: #dbdee6;
-	border-radius: 0.4rem;
-}
-
-#menu-icon {
-	font-size: 2.4rem;
-	cursor: pointer;
-	z-index: 10001;
-	display: none;
-	position: absolute;
-	right: 3rem;
-
-	@media (max-width: 768px) {
-		display: block;
 	}
 }
