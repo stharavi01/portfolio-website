@@ -78,13 +78,14 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 0.8rem;
+	cursor: pointer;
 
 	@media (max-width: 500px) {
 		margin: 4rem 6% 0 6%;
 	}
 
 	& > div {
-		border: 1px solid #4163ac;
+		border: 1px solid #1ad1a5;
 		border-radius: 50%;
 		padding: 0.8rem;
 		transition: all 0.3s ease-in-out;
@@ -93,7 +94,7 @@
 			font-size: 2rem;
 			display: flex;
 			justify-content: center;
-			color: #4163ac;
+			color: #29af90;
 
 			@media (max-width: 500px) {
 				font-size: 1.5rem;
@@ -102,7 +103,7 @@
 	}
 
 	& > div:hover {
-		background-color: #405c94;
+		background-color: #1ad1a5;
 
 		i {
 			color: white;

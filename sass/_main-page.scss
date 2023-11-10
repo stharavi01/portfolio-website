@@ -22,10 +22,10 @@
 
 	&-btn {
 		display: inline-block;
-		background-color: rgb(214, 213, 199);
-		padding: 1.2rem 2.6rem;
+		padding: 1rem 2.2rem;
 		border-radius: 0.5rem;
 		cursor: pointer;
+		outline: 1px solid #1fac8b;
 
 		@media (max-width: 406px) {
 			padding: 0.5rem 1rem;
@@ -34,10 +34,12 @@
 		& a {
 			color: $text-color;
 			font-size: 1rem;
+			font-weight: bold;
+			letter-spacing: 1px;
 		}
 	}
 	&-btn:hover {
-		background: #acb1d6;
+		box-shadow: 0 4px 6px rgba(26, 209, 165, 0.1);
 	}
 }
 

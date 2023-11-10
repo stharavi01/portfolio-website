@@ -1,40 +1,45 @@
 .right-sidebar {
-  grid-column: right-sidebar-start / right-sidebar-end;
-  grid-row: 1 / -1;
-  display: flex;
-  writing-mode: vertical-rl;
-  margin-right: 0px;
-  letter-spacing: 1.5px;
-  animation: cssAnimation 0s 2.5s forwards;
-  visibility: hidden;
+	grid-column: right-sidebar-start / right-sidebar-end;
+	grid-row: 1 / -1;
+	display: flex;
+	writing-mode: vertical-rl;
+	margin-right: 0px;
+	letter-spacing: 1.5px;
+	animation: cssAnimation 0s 2.5s forwards;
+	visibility: hidden;
 
-  @keyframes cssAnimation {
-    to {
-      visibility: visible;
-    }
-  }
+	@keyframes cssAnimation {
+		to {
+			visibility: visible;
+		}
+	}
 
-  @media (max-width: 761px) {
-    display: none;
-  }
-  p {
-    position: fixed;
-    top: 54%;
-    right: 3%;
-    font-family: $font-display;
-    opacity: 0.8;
-    transition: all 0.2s ease-in;
+	@media (max-width: 761px) {
+		display: none;
+	}
+	p {
+		position: fixed;
+		top: 54%;
+		right: 3%;
+		font-family: $font-display;
+		opacity: 1;
+		transition: all 0.2s ease-in;
+		font-style: italic;
 
-    &:hover {
-      transform: scale(1.02);
-    }
-  }
+		& a {
+			color: #413f3f;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
 }
 
 .vr {
-  border-left: 1.5px solid black;
-  height: 300px;
-  position: fixed;
-  top: 85%;
-  right: 4%;
+	border-left: 1.5px solid black;
+	height: 300px;
+	position: fixed;
+	top: 85%;
+	right: 4%;
 }

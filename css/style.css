@@ -21,8 +21,8 @@ html {
 }
 
 body {
-  background: #f3eeea;
-  color: #1a1818;
+  background: #fffbf5;
+  color: #726f6f;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -46,10 +46,10 @@ body {
   }
 }
 
-.heading-4, .heading-3, .heading-2, .heading-1 {
+.heading-5, .heading-4, .heading-3, .heading-2, .heading-1 {
   font-size: %heading font-display;
   font-weight: 500;
-  color: #1a1818;
+  color: #726f6f;
 }
 
 .heading-1 {
@@ -58,6 +58,7 @@ body {
 
 .heading-2 {
   font-size: 1.2rem;
+  color: #1ad1a5;
 }
 @media (max-width: 768px) {
   .heading-2 {
@@ -66,7 +67,7 @@ body {
 }
 
 .heading-3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 @media (max-width: 881px) {
   .heading-3 {
@@ -81,7 +82,7 @@ body {
 
 .heading-4 {
   font-size: 3.8rem;
-  color: #68696e;
+  color: #726f6f;
   font-weight: 700;
 }
 @media (max-width: 928px) {
@@ -102,6 +103,20 @@ body {
 @media (max-width: 544px) {
   .heading-4 {
     font-size: 2rem;
+  }
+}
+
+.heading-5 {
+  font-size: 1.8rem;
+}
+@media (max-width: 881px) {
+  .heading-5 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 461px) {
+  .heading-5 {
+    font-size: 1.4rem;
   }
 }
 
@@ -131,10 +146,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(228, 225, 225);
+  background: rgba(252, 247, 247, 0.6);
   padding: 10px 10%;
   transition: 0.4s;
-  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.4509803922), 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 @media (max-width: 768px) {
   header .navbar {
@@ -166,10 +180,12 @@ header.shadow {
 }
 
 .logo {
+  padding: 4px 0;
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-left: 1%;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .logo {
@@ -211,8 +227,9 @@ header.shadow {
 .navbar a {
   font-size: 1rem;
   padding: 10px 20px;
-  color: var(--text-color);
+  color: #0f0f0f;
   font-weight: 500;
+  margin: 0 4px;
 }
 @media (max-width: 768px) {
   .navbar a {
@@ -223,7 +240,8 @@ header.shadow {
 }
 
 .navbar a:hover {
-  color: rgb(50, 50, 158);
+  background-color: #dbdee6;
+  border-radius: 0.4rem;
 }
 
 #menu-icon {
@@ -333,6 +351,7 @@ header.shadow {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.8rem;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .skill-gallery {
@@ -340,7 +359,7 @@ header.shadow {
   }
 }
 .skill-gallery > div {
-  border: 1px solid #4163ac;
+  border: 1px solid #1ad1a5;
   border-radius: 50%;
   padding: 0.8rem;
   transition: all 0.3s ease-in-out;
@@ -349,7 +368,7 @@ header.shadow {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  color: #4163ac;
+  color: #29af90;
 }
 @media (max-width: 500px) {
   .skill-gallery > div i {
@@ -357,7 +376,7 @@ header.shadow {
   }
 }
 .skill-gallery > div:hover {
-  background-color: #405c94;
+  background-color: #1ad1a5;
 }
 .skill-gallery > div:hover i {
   color: white;
@@ -390,10 +409,10 @@ header.shadow {
 }
 .home-btn {
   display: inline-block;
-  background-color: rgb(214, 213, 199);
-  padding: 1.2rem 2.6rem;
+  padding: 1rem 2.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  outline: 1px solid #1fac8b;
 }
 @media (max-width: 406px) {
   .home-btn {
@@ -401,11 +420,13 @@ header.shadow {
   }
 }
 .home-btn a {
-  color: #1a1818;
+  color: #726f6f;
   font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .home-btn:hover {
-  background: #acb1d6;
+  box-shadow: 0 4px 6px rgba(26, 209, 165, 0.1);
 }
 
 .main-paragraph {
@@ -509,8 +530,12 @@ header.shadow {
   top: 54%;
   right: 3%;
   font-family: "Josefin Sans", sans-serif;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.2s ease-in;
+  font-style: italic;
+}
+.right-sidebar p a {
+  color: #413f3f;
 }
 .right-sidebar p:hover {
   transform: scale(1.02);
@@ -547,9 +572,10 @@ header.shadow {
   }
 }
 
-.work-tools {
+.work-tools a {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
+  color: #03001c;
 }
 
 .features {
@@ -581,8 +607,9 @@ header.shadow {
   }
 }
 .features__content .description {
-  padding: 2rem;
+  padding: 1.2rem;
   background-color: rgb(227, 228, 208);
+  margin-bottom: 0.6rem;
 }
 @media (max-width: 761px) {
   .features__content .description {
@@ -599,10 +626,11 @@ header.shadow {
 .features__image img {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.2s ease-in-out;
   border-radius: 1rem;
   height: 94%;
+  z-index: 1;
 }
 .features__image img:hover {
   opacity: 1;

@@ -12,10 +12,9 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: rgb(228, 225, 225);
+	background: rgba(252, 247, 247, 0.6);
 	padding: 10px 10%;
 	transition: 0.4s;
-	box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 
 	& .navbar {
 		@media (max-width: 768px) {
@@ -45,10 +44,12 @@ header.shadow {
 	box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
 .logo {
+	padding: 4px 0;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	margin-left: 1%;
+	cursor: pointer;
 
 	@media (max-width: 768px) {
 		font-weight: 500;
@@ -87,8 +88,9 @@ header.shadow {
 .navbar a {
 	font-size: 1rem;
 	padding: 10px 20px;
-	color: var(--text-color);
+	color: #0f0f0f;
 	font-weight: 500;
+	margin: 0 4px;
 
 	@media (max-width: 768px) {
 		padding: 1.5rem;
@@ -97,7 +99,8 @@ header.shadow {
 	}
 }
 .navbar a:hover {
-	color: $nav-hover;
+	background-color: #dbdee6;
+	border-radius: 0.4rem;
 }
 #menu-icon {
 	font-size: 2.4rem;
