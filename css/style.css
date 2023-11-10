@@ -263,7 +263,7 @@ header {
 @media (max-width: 506px) {
   .about_us {
     width: 100vw;
-    margin-bottom: 3rem;
+    margin-bottom: rem;
   }
 }
 
@@ -372,7 +372,6 @@ header {
 
 .home {
   margin-top: 10rem;
-  margin-bottom: 8rem;
 }
 @media (max-width: 768px) {
   .home {
@@ -382,7 +381,7 @@ header {
 @media (max-width: 406px) {
   .home {
     margin-top: 7rem;
-    margin-bottom: 9rem;
+    margin-bottom: 1rem;
   }
 }
 .home-btn {
@@ -546,7 +545,7 @@ header {
   .works {
     width: 100vw;
     grid-column: center-start/full-end;
-    margin-top: 0rem;
+    margin-top: 2rem;
     padding: 0 4%;
   }
   .works h1 {
