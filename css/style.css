@@ -150,10 +150,17 @@ header {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   box-shadow: 0 0 4px rgba(60, 209, 174, 0.6);
   padding: 10px 10%;
   transition: 0.4s;
+}
+@media (max-width: 506px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 
 .navbar {
@@ -171,6 +178,8 @@ header {
   .navbar.active {
     position: absolute;
     right: 0;
+    background-color: red;
+    height: 100%;
   }
 }
 
@@ -180,19 +189,6 @@ header {
   color: #0f0f0f;
   font-weight: 500;
   margin: 0 4px;
-}
-
-.smaller-navbar {
-  display: none;
-}
-@media (max-width: 506px) {
-  .smaller-navbar {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 10px;
-  }
 }
 
 #menu-icon {
@@ -211,10 +207,9 @@ header {
 
 .logo {
   padding: 4px 0;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-left: 1%;
+  position: absolute;
+  left: 3%;
+  top: 0.6rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   opacity: 0.8;
@@ -227,6 +222,7 @@ header {
   .logo {
     font-weight: 500;
     font-size: 1.3rem;
+    left: 8%;
   }
 }
 @media (max-width: 506px) {
