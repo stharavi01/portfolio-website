@@ -149,7 +149,7 @@ header {
   right: 0;
   display: flex;
   justify-content: right;
-  box-shadow: 0 0 4px rgba(60, 209, 174, 0.6);
+  box-shadow: 0 0 8px rgba(60, 209, 174, 0.2);
   padding: 8px 10%;
   transition: 0.4s;
 }
@@ -186,6 +186,11 @@ header {
   .navbar a {
     border-bottom: 1px solid #ccc;
     margin: 0 2rem 0 0.2rem;
+    font-size: 0.92rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar a:hover {
+    transform: scale(1.02);
   }
 }
 
@@ -215,20 +220,28 @@ header {
     border-radius: 50%;
     outline: 1px solid #1ad1a5;
     margin-bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .profile-card .profile-header > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 6px rgba(38, 201, 163, 0.8);
   }
   .profile-card .profile-header p {
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     font-size: 0.9rem;
   }
   .profile-card .profile-about {
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.6rem;
-    font-size: 0.9rem;
+    font-size: 0.92rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: italic;
   }
   .profile-card .profile-socials {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.2rem;
   }
   .profile-card .profile-socials > a {
     border: none;
@@ -236,6 +249,10 @@ header {
     margin: 0 6px;
     font-size: 1.4rem;
     color: #1ad1a5;
+    transition: all 0.2s ease-in-out;
+  }
+  .profile-card .profile-socials > a:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -528,9 +545,9 @@ header {
 .social a {
   margin-bottom: 1rem;
   font-size: 1.3rem;
-  color: .social a text-color;
   transition: all 0.2s ease-in-out;
   opacity: 0.7;
+  color: #726f6f;
 }
 
 .social a:hover {
