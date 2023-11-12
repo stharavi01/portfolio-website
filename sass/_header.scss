@@ -5,6 +5,7 @@
 
 header {
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	top: 0;
 	right: 0;
@@ -12,6 +13,7 @@ header {
 	justify-content: right;
 	padding: 8px 10%;
 	transition: 0.4s;
+	background-color: #fffffe;
 
 	@media (max-width: 506px) {
 		z-index: 10;
@@ -21,9 +23,7 @@ header {
 
 .navbar {
 	display: flex;
-}
 
-.navbar {
 	@media (max-width: 506px) {
 		padding: 5rem 1rem;
 		flex-direction: column;
@@ -48,12 +48,13 @@ header {
 			font-size: 0.92rem;
 			transition: all 0.2s ease-in-out;
 			color: $text-color;
-
-			&:hover {
-				transform: scale(1.02);
-			}
 		}
 	}
+}
+
+.navbar a:hover {
+	transform: scale(1.03);
+	color: #92c5b9;
 }
 
 .navbar.active {
