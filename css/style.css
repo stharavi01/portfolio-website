@@ -11,7 +11,7 @@
 html,
 body {
   width: 100%;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -170,27 +170,8 @@ header {
     flex-direction: column;
     position: absolute;
     right: -500px;
-    top: 0;
     transition: right 0.4s ease;
   }
-}
-
-.nav-header {
-  display: none;
-}
-@media (max-width: 506px) {
-  .nav-header {
-    display: block;
-    margin-left: 0.7rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.navbar.active {
-  right: 0;
-  height: 120vh;
-  width: 80vw;
-  background-color: #f3f7f6;
 }
 
 .navbar a {
@@ -205,6 +186,56 @@ header {
   .navbar a {
     border-bottom: 1px solid #ccc;
     margin: 0 2rem 0 0.2rem;
+  }
+}
+
+.navbar.active {
+  right: 0;
+  height: 120vh;
+  width: 80vw;
+  background-color: #f3f7f6;
+}
+
+.profile-card {
+  display: none;
+  margin-top: 1rem;
+}
+@media (max-width: 506px) {
+  .profile-card {
+    display: block;
+  }
+  .profile-card .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card .profile-header > img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    outline: 1px solid #1ad1a5;
+    margin-bottom: 1rem;
+  }
+  .profile-card .profile-header p {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .profile-card .profile-about {
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .profile-card .profile-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+  }
+  .profile-card .profile-socials > a {
+    border: none;
+    padding: 6px;
+    margin: 0 6px;
+    font-size: 1.4rem;
+    color: #1ad1a5;
   }
 }
 
@@ -257,6 +288,9 @@ header {
 @media (max-width: 506px) {
   .logo img {
     width: 2rem;
+  }
+  .logo img .navbar.active {
+    display: none;
   }
 }
 
@@ -410,7 +444,7 @@ header {
 }
 @media (max-width: 406px) {
   .home-btn {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
   }
 }
 .home-btn a {
