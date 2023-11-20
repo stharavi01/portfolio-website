@@ -152,7 +152,8 @@ header {
   justify-content: right;
   padding: 8px 10%;
   transition: 0.4s;
-  background-color: #fffffe;
+  background-color: #fffbf4;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 506px) {
   header {
