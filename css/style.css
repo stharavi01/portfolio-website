@@ -462,7 +462,9 @@ header {
   padding: 1.2rem 2.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  outline: 1px solid #1fac8b;
+  background-color: #e6e8ee;
+  box-shadow: 0 4px 8px rgba(36, 35, 35, 0.1);
+  transition: background-color 0.3s ease;
 }
 @media (max-width: 406px) {
   .home-btn {
@@ -476,8 +478,8 @@ header {
   letter-spacing: 1px;
 }
 .home-btn:hover {
-  background-color: #e6e8ee;
-  color: #000;
+  background-color: #B4B4B8;
+  color: #FFFFFF;
 }
 
 .home__text {
@@ -821,7 +823,6 @@ form textarea {
   width: 50%;
   cursor: pointer;
   color: #000;
-  outline: 1px solid #1ad1a5;
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -836,6 +837,5 @@ form textarea {
 }
 
 .contact-button:hover {
-  background: .contact-button:hover hover;
-  transform: scale(1.04);
+  transform: scale(1.05);
 }

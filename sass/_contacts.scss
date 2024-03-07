@@ -71,7 +71,6 @@ form textarea {
 	width: 50%;
 	cursor: pointer;
 	color: #000;
-	outline: 1px solid #1ad1a5;
 	justify-content: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -84,6 +83,6 @@ form textarea {
 	}
 }
 .contact-button:hover {
-	background: &hover;
-	transform: scale(1.04);
+	transform: scale(1.05);
+
 }
