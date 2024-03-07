@@ -463,8 +463,6 @@ header {
   border-radius: 0.5rem;
   cursor: pointer;
   background-color: #e6e8ee;
-  box-shadow: 0 4px 8px rgba(36, 35, 35, 0.1);
-  transition: background-color 0.3s ease;
 }
 @media (max-width: 406px) {
   .home-btn {
@@ -478,8 +476,9 @@ header {
   letter-spacing: 1px;
 }
 .home-btn:hover {
-  background-color: #B4B4B8;
-  color: #FFFFFF;
+  outline: 1px solid #1fac8b;
+  color: #000;
+  transform: scale(1.05);
 }
 
 .home__text {
