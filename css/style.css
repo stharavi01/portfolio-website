@@ -462,7 +462,7 @@ header {
   padding: 1.2rem 2.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  background-color: #e6e8ee;
+  background-color: #4CCD99;
 }
 @media (max-width: 406px) {
   .home-btn {
@@ -470,13 +470,13 @@ header {
   }
 }
 .home-btn a {
-  color: #726f6f;
+  color: #FFFFFF;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
 .home-btn:hover {
-  outline: 1px solid #1fac8b;
+  outline: 1px solid #4CCD99;
   color: #000;
   transform: scale(1.05);
 }
